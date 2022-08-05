@@ -1,4 +1,4 @@
-
+﻿
 
 body {
     font-family: Open Sans;
@@ -283,6 +283,7 @@ audio {
     background-size: 200px;
     background-repeat: no-repeat;
     background-position-x: left;
+}
 
 .emoji_07 {
     background-image: url(imgs/07.png);
@@ -326,10 +327,10 @@ audio {
         top: 42%;
         left: 51%;
     }
+    .swal-modal {
+        padding-left: 35%;
+    }
     #loader-wrapper {
         background-size: 80%;
-    }
-    .swal-modal {
-        padding-left: 35% !important;
     }
 }

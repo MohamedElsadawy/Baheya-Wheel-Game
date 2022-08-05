@@ -1,4 +1,4 @@
-
+﻿
 function shuffle(array) {
   var currentIndex = array.length,
     randomIndex;
@@ -180,3 +180,4 @@ setTimeout(function () {
             }, false)
         })
 })()
+
