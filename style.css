@@ -1,4 +1,4 @@
-﻿
+
 
 body {
     font-family: Open Sans;
@@ -235,7 +235,83 @@ audio {
     right: -50px;
   }
 }
+/*emoji styles*/
+.swal-modal {
+    padding-left: 10%;
+}
+.emoji_01 {
+    background-image: url(imgs/01.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.emoji_02 {
+    background-image: url(imgs/02.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.emoji_03 {
+    background-image: url(imgs/03.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
 
+.emoji_04 {
+    background-image: url(imgs/04.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.emoji_05 {
+    background-image: url(imgs/05.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.emoji_06 {
+    background-image: url(imgs/06.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+
+.emoji_07 {
+    background-image: url(imgs/07.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.emoji_08 {
+    background-image: url(imgs/08.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.emoji_09 {
+    background-image: url(imgs/09.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+.emoji_10 {
+    background-image: url(imgs/10.png);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
 @media (max-width: 576px) {
     body {
         background-image:url(mobile-bg.png);
@@ -252,5 +328,8 @@ audio {
     }
     #loader-wrapper {
         background-size: 80%;
+    }
+    .swal-modal {
+        padding-left: 35% !important;
     }
 }
