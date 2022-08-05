@@ -1,4 +1,4 @@
-﻿
+
 function shuffle(array) {
   var currentIndex = array.length,
     randomIndex;
@@ -56,19 +56,48 @@ function spin() {
     ten[0],
   ]);
   // console.log(Hasil[0]);
-
+  var imgClass = "";
   // Ambil value item yang terpilih
-  if (one.includes(Hasil[0])) SelectedItem = "قول نكتة مجنونة في فيديو ولو جاب ٥٠٠٠ لايك تكسب";
-  if (two.includes(Hasil[0])) SelectedItem = "روح لمامتك واحضنها";
-  if (three.includes(Hasil[0])) SelectedItem = "اطلع في البالكونة وانشر الغسيل";
-  if (four.includes(Hasil[0])) SelectedItem = "العب ٢٠ اسكواتس يابطل";
-  if (five.includes(Hasil[0])) SelectedItem = "ادفعلها ٢٥٠ ج";
-  if (six.includes(Hasil[0])) SelectedItem = " ارسملها صورة";
-  if (seven.includes(Hasil[0])) SelectedItem = "ارفع دامبلز ٢٠ كيلو لمدة دقيقه";
-  if (eight.includes(Hasil[0])) SelectedItem = "هي تطلب اي حاجة وانت هتنفذ";
-  if (nine.includes(Hasil[0])) SelectedItem = "اغسل المواعين";
-  if (ten.includes(Hasil[0])) SelectedItem = "جرب تلف تاني";
-
+    if (one.includes(Hasil[0])) {
+        SelectedItem = "قول نكتة مجنونة في فيديو ولو جاب ٥٠٠٠ لايك تكسب ";
+        imgClass = "emoji_01";
+    }
+    if (two.includes(Hasil[0])) {
+        SelectedItem = "روح لمامتك واحضنها";
+        imgClass = "emoji_02";
+    }
+    if (three.includes(Hasil[0])) {
+        SelectedItem = "اطلع في البالكونة وانشر الغسيل";
+        imgClass = "emoji_03";
+    }
+    if (four.includes(Hasil[0])) {
+        SelectedItem = "العب ٢٠ اسكواتس يابطل";
+        imgClass = "emoji_04";
+    }
+    if (five.includes(Hasil[0])) {
+        SelectedItem = "ادفعلها ٢٥٠ ج";
+        imgClass = "emoji_05";
+    }
+    if (six.includes(Hasil[0])) {
+        SelectedItem = " ارسملها صورة";
+        imgClass = "emoji_06";
+    }
+    if (seven.includes(Hasil[0])) {
+        SelectedItem = "ارفع دامبلز ٢٠ كيلو لمدة دقيقه";
+        imgClass = "emoji_07";
+    }
+    if (eight.includes(Hasil[0])) {
+        SelectedItem = "هي تطلب اي حاجة وانت هتنفذ";
+        imgClass = "emoji_08";
+    }
+    if (nine.includes(Hasil[0])) {
+        SelectedItem = "اغسل المواعين";
+        imgClass = "emoji_09";
+    }
+    if (ten.includes(Hasil[0])) {
+        SelectedItem = "جرب تلف تاني";
+        imgClass = "emoji_10";
+    }
 
   // Proses
   box.style.setProperty("transition", "all ease 5s");
@@ -79,12 +108,13 @@ function spin() {
   }, 5000);
 
   // Munculkan Alert
-  setTimeout(function () {
+    setTimeout(function () {
     applause.play();
       swal(SelectedItem);
       swal({
-          text: SelectedItem,
-          buttons: ["تمام", "جرب تاني"],
+        text: SelectedItem,
+        buttons: ["تمام", "جرب تاني"],
+        className: imgClass,
       });
   }, 5500);
 
@@ -150,4 +180,3 @@ setTimeout(function () {
             }, false)
         })
 })()
-
